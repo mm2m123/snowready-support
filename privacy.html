@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="了解雪备如何处理本机清单、行程、天气查询、可选 iCloud 同步、通知、反馈邮件和网站访问资料。">
+  <meta name="theme-color" content="#f5f8f9">
+  <title>隐私政策 · 雪备 SnowReady</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <header class="site-header">
+    <a class="brand" href="./">雪备<span>SnowReady</span></a>
+    <nav aria-label="网站导航">
+      <a href="./">支持与帮助</a>
+      <a href="privacy.html" aria-current="page">隐私政策</a>
+    </nav>
+  </header>
+  <main id="main">
+    <div class="page-heading">
+      <h1>隐私政策</h1>
+      <p class="lead">说明资料保存在哪里、哪些功能需要联网，以及你如何管理自己的资料。</p>
+      <p class="meta">版本日期：<time datetime="2026-10-15">2026 年 10 月 15 日</time> · 开发者：3KEC（雪备的独立开发者）</p>
+    </div>
+    <div class="reading-layout">
+      <aside class="contents" aria-label="本页目录">
+        <p>在本页</p>
+        <ul>
+          <li><a href="#overview">适用范围</a></li>
+          <li><a href="#local">本机资料</a></li>
+          <li><a href="#weather">天气查询</a></li>
+          <li><a href="#icloud">iCloud 同步</a></li>
+          <li><a href="#notifications">提醒与通知</a></li>
+          <li><a href="#feedback">反馈邮件</a></li>
+          <li><a href="#website">本网站与第三方</a></li>
+          <li><a href="#rights">资料管理与删除</a></li>
+          <li><a href="#security">保护与未成年人</a></li>
+          <li><a href="#contact">更新与联系</a></li>
+        </ul>
+      </aside>
+      <article aria-label="隐私政策正文">
+        <section id="overview">
+          <h2>适用范围</h2>
+          <p>本政策适用于 3KEC 提供的雪备（SnowReady）App 及本支持网站。雪备用于管理滑雪出发前的清单、行程和提醒。本机基础功能无需注册独立的雪备账号。</p>
+          <div class="policy-summary"><p>日常清单和行程在设备上保存。天气查询会联系和风天气；主动开启 iCloud 后，可同步资料会由 Apple CloudKit 处理。我们未在当前 App 或本网站中接入广告、第三方行为统计或跨 App 广告追踪脚本。</p></div>
+        </section>
+        <section id="local">
+          <h2>本机保存的资料</h2>
+          <p>应用在设备上保存清单文字、顺序和准备状态，行程日期和雪场快照，雪场收藏、偏好、天气缓存，以及维持应用功能所需的状态。这些资料用于显示和管理你的准备事项。</p>
+          <p>你输入的内容按你的操作保留。系统备份和设备迁移也可能保留应用资料，具体取决于你的系统设置。我们不因本机保存功能而自动接收这些清单或行程。</p>
+        </section>
+        <section id="weather">
+          <h2>天气查询</h2>
+          <p>获取天气时，应用直接向和风天气（QWeather）发送请求，包含所选雪场的经纬度、预报范围、语言和应用服务认证信息。坐标来自雪场目录，当前请求保留两位小数；应用不为天气查询读取设备 GPS 位置，也不发送你的清单文字。</p>
+          <p>网络服务会接触请求的 IP 地址及必要的请求信息；这类信息可能涉及连接、服务安全、计费和故障排查。服务提供方的处理规则见<a href="https://www.qweather.com/terms/privacy">和风天气隐私政策</a>及<a href="https://dev.qweather.com/docs/terms/tos/">开发者服务条款</a>。本政策不承诺第三方不保留网络日志。</p>
+          <p>天气缓存用于减少重复请求并在网络不可用时显示已有信息。你可以使用本机清单和行程功能，而不查看天气。</p>
+        </section>
+        <section id="icloud">
+          <h2>可选 iCloud 同步</h2>
+          <p>在你主动开启“同步此设备”后，应用通过 Apple CloudKit，将清单、行程、雪场收藏、可同步偏好以及已有装备资料等存入当前 Apple Account 对应的私有云数据库，供同一账号设备合并与同步。</p>
+          <p>应用使用 Apple 提供的账号状态及应用范围内的账号标识来隔离同步资料，不读取你的 Apple Account 密码。天气缓存、当前设备的提醒开关和提醒时间不随行程同步。同步还会保存必要的版本、删除和冲突恢复信息，以处理离线修改与合并。</p>
+          <p>关闭同步仅暂停当前设备的同步，现有本机和云端资料会保留。Apple 的数据处理与储存安排见<a href="https://www.apple.com/legal/privacy/zh-cn/">Apple 隐私政策</a>。云服务处理的区域可能与设备所在地不同，取决于 Apple 的服务安排。</p>
+        </section>
+        <section id="notifications">
+          <h2>行程提醒与系统通知</h2>
+          <p>“前一天准备”和“当天出行”默认关闭，由你主动开启并授权。应用根据行程日期、雪场名称、统一提醒时间及单行程参与偏好，在当前设备安排本地通知。</p>
+          <p>提醒偏好、已安排记录、通知点击状态及一次性发现提示标记保存在设备独立文件中，不进入行程的 iCloud 同步。你可以在 App 内关闭提醒，或在系统设置中撤销通知权限。</p>
+          <p>iCloud 同步还可能使用 Apple 的后台通知来获知资料更新；它与上述本地出行提醒用途不同，后台执行时机由系统决定。</p>
+        </section>
+        <section id="feedback">
+          <h2>你主动发送的反馈</h2>
+          <p>通过 App 发起反馈时，邮件会预填 App 版本、构建号、系统版本和通用设备型号。你可以检查、修改或取消发送。我们不会代你自动发送邮件，也不会自动附上完整数据库或私人行程。</p>
+          <p>发送后，我们会接收你的邮箱、邮件正文、基础设备信息及你主动附加的附件，用于回复、排查和跟进问题。邮件由你选择的邮件服务和收件方邮件服务处理。</p>
+          <p>反馈仅在处理问题、必要的后续沟通及依法留存所需的范围内保留；不再需要时删除或去除可识别信息。你可以联系下方邮箱请求删除反馈，我们会在核实请求后处理；依法必须保留的部分除外。请避免发送无关的敏感资料。</p>
+        </section>
+        <section id="website">
+          <h2>本网站及其他第三方服务</h2>
+          <p>本网站由 GitHub Pages 托管，页面本身不使用分析脚本、广告、Cookie 或表单。访问网页时，GitHub 会为安全目的记录和保存访问者 IP；其处理方式见<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。</p>
+          <p>页面链接不会自动加载第三方网站内容。点击外部链接或发送邮件后，相应服务按自身政策处理你直接提供的资料。我们不会出售你的个人资料，也不将反馈资料用于广告追踪。</p>
+        </section>
+        <section id="rights">
+          <h2>资料管理、保留与删除</h2>
+          <ul>
+            <li><strong>清单与行程：</strong>可在应用支持的入口编辑或删除。开启 iCloud 时，删除会在后续成功同步时传播到云端与相关设备；离线或同步异常时不会即时完成。</li>
+            <li><strong>暂停同步：</strong>在“设置 → iCloud 同步”关闭“同步此设备”。这不会清除云端副本，也不会删除其他设备的资料。</li>
+            <li><strong>恢复副本：</strong>重要冲突与首次合并副本设置 30 天有效期，到期后在后续同步维护中处理。用于防止旧资料重新出现的删除标记，以及系统备份，可能按其用途继续保留；不承诺在固定时刻完全擦除所有副本。</li>
+            <li><strong>完整清理：</strong>当前版本没有一键清空全部本机及 iCloud 资料的入口。如需清理云端副本或了解系统备份，请通过邮箱请求操作指导。我们不掌握你的 Apple Account 密码，不能代你直接清空私有 iCloud 资料。</li>
+            <li><strong>邮件与隐私请求：</strong>你可以询问我们收到的反馈资料、请求更正或删除，以及提出适用法律赋予的其他个人资料权利请求。请使用原反馈邮箱联系，避免为核实身份提供不必要的证件或账号秘密。</li>
+          </ul>
+          <p>卸载 App 不等于删除 iCloud 或系统备份中的资料。清理前请确认哪些资料需要保留；具体问题可先联系开发者。</p>
+        </section>
+        <section id="security">
+          <h2>资料保护与未成年人</h2>
+          <p>应用通过 HTTPS 和 Apple 系统服务传输相关资料，并使用系统应用隔离与储存能力。没有任何储存或传输方式能够保证绝对安全；请保护设备及账号，不要在反馈中发送密码或验证码。</p>
+          <p>雪备未提供面向儿童的独立账号或社交功能，也不以收集未成年人资料为目的。未成年人应在监护人指导下使用涉及联网、云同步和反馈的功能。若你认为反馈中包含需删除的未成年人资料，请联系我们。</p>
+        </section>
+        <section id="contact">
+          <h2>政策更新与联系我们</h2>
+          <p>功能或数据处理方式变化时，我们会更新本页和版本日期。涉及重大变化时，会按适用要求提供通知或取得必要同意。</p>
+          <p>开发者：3KEC（雪备的独立开发者）<br>支持与隐私联系：<a href="mailto:mm2m123@icloud.com">mm2m123@icloud.com</a></p>
+          <p>如对某项功能或资料管理方式有疑问，也可先查看<a href="./">支持与帮助</a>。</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>雪备 SnowReady · 3KEC</p>
+    <p><a href="./">支持与帮助</a> · <a href="#main">回到顶部</a></p>
+  </footer>
+</body>
+</html>
